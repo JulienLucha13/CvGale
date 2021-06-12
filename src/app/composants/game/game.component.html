@@ -1,0 +1,37 @@
+<div class="outer-wrapper" >
+  <div id="wrapper" class="wrapper" (keypress)="scrolling($event)">
+
+    <div [className]="backgrounds[0]">
+      <p class="font center">
+          Competences : <br><br>
+         C#, Java, PHP, Android, .NET(MVC),<br>
+        CSS3, JavaScript, JQuery, HTML5, Angular  <br>
+         SQL<br>   </p>
+    </div>
+    <div [className]="backgrounds[1]">
+        <p class="font center">
+            Formation :<br><br>
+            BTS Service Informatique aux Organisations (2017)<br>
+            Baccalaureat Systeme Electronique Numerique (mention bien - 2015)  <br>
+            BEP Systeme Electronique Numerique (2014)<br>   </p>
+    </div>
+    <div [className]="backgrounds[2]">
+        <p class="font center">
+        Experience du secteur informatique :<br><br>
+        Developpeur ANDROID a IT-CE (stage)<br>
+        Developpeur PHP/JS/C# a INFOTEL (stage)  <br>  </p>
+
+        <p class="font bottomRight">
+          Contact : <br>
+          mail -> julien.workout13@gmail.com<br>
+          telephone -> 06.29.83.78.53
+        </p>
+    </div>
+
+    <img  class={{character+sens}} [src]="imgPath" alt="" />
+    <img class="coeur" src="assets/coeur.png" alt="" />
+    <img [className]="nuage1" src="assets/nuage-1.png" alt="" />
+    <div class="arrow"><img [className]="arrowLeft" src="assets/leftArrow.png" alt="" /><img [className]="arrowRight" src="assets/rightArrow.png" alt="" /> </div>
+    
+  </div>
+</div>

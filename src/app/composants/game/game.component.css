@@ -1,0 +1,138 @@
+
+@font-face
+{
+font-family: "pixel";
+src:  url('../../../assets/04B_30__.TTF');
+}
+
+.desert
+{
+    background-image: url(../../../assets/desert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.desert-sun
+{
+    background-image:url(../../../assets/desert_sun.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+.wrapper 
+{
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}
+.outter-wrapper
+{
+    
+    width:100vh;
+    height:100vw;
+    transform: rotate(-90deg) translateX(-100vh) ;
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position:absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar
+{
+    display:none;
+}
+
+.character
+{
+   position: absolute;
+   position: fixed;
+   margin-top:33%;
+   margin-left: 45%;
+}
+.gauche
+{
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+
+.coeur
+{
+    z-index: 60;
+    position: absolute;
+    position: fixed;
+}
+
+.arrow
+{
+    position: absolute;
+    position: fixed;
+    margin-top: 38%;
+}
+
+.opaque
+{
+    opacity: 0.3;
+}
+
+.nuage1
+{
+    z-index: 50;
+    opacity: 0.6;
+    position: absolute;
+    position: fixed;
+    margin-left:100%;
+    
+}
+
+.scrollNuage1
+{
+    z-index: 50;
+    opacity: 0.6;
+    position: absolute;
+    position: fixed;
+    margin-right:100%;
+    transition-duration: 80s;
+}
+
+.scrollNuageFin
+{
+    z-index: 50;
+    opacity: 0;
+    position: absolute;
+    position: fixed;
+    margin-right:200%;
+    padding-right: 200%;
+    transition-duration: 4s;
+
+}
+
+.font
+{
+    position: relative;
+    font-family: pixel;
+    color : black;
+    font-size: 3vh;
+    z-index: 70;
+}
+.center
+{
+    margin-top:6%; 
+
+}
+
+.bottomRight
+{
+    float:right;
+}
